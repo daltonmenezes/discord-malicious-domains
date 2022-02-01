@@ -17,7 +17,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Discord Guardian Action
-        uses: actions/discord-guardian-action@v1
+        uses: daltonmenezes/discord-guardian-action@v1
         id: discord
         with:
           name: 'Dalton Menezes'
