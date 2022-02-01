@@ -1,0 +1,28 @@
+on:
+  push:
+    branches:
+      - "main"
+  schedule:
+    # At minute 0 past every 5th hour
+    # https://crontab.guru/#0_*/5_*_*_*
+    - cron: "0 */5 * * *"
+
+jobs:
+  discord_guardian_job:
+    runs-on: ubuntu-latest
+    name: Discord Guardian Job
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Discord Guardian Action
+        uses: actions/discord-guardian-action@v1
+        id: discord
+        with:
+          name: 'Dalton Menezes'
+          email: 'daltonmenezes@outlook.com'
+          directory: domains
+          myDomainList: domains/my-domains.json
+
+
