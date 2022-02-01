@@ -3,9 +3,9 @@ on:
     branches:
       - "main"
   schedule:
-    # At minute 0 past every 5th hour
-    # https://crontab.guru/#0_*/5_*_*_*
-    - cron: "0 */5 * * *"
+    # At minute 0 past every hour
+    # https://crontab.guru/#0_*/1_*_*_*
+    - cron: "0 */1 * * *"
 
 jobs:
   discord_guardian_job:
