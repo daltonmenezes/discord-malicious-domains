@@ -19,7 +19,10 @@ You can download the [domains.json](https://raw.githubusercontent.com/daltonmene
 
 Example:
 ```js
-axios.get('https://raw.githubusercontent.com/daltonmenezes/discord-malicious-domains/main/domains/domains.json')
+const DISCORD_MALICIOUS_DOMAINS =
+  'https://raw.githubusercontent.com/daltonmenezes/discord-malicious-domains/main/domains/domains.json'
+
+axios.get(DISCORD_MALICIOUS_DOMAINS)
 ```
 
 # Acknowledgment
