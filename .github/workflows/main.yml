@@ -6,6 +6,7 @@ on:
     # At minute 0 past every hour
     # https://crontab.guru/#0_*/1_*_*_*
     - cron: "0 */1 * * *"
+  workflow_dispatch:
 
 jobs:
   discord_guardian_job:
